@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+            /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: 500px 300px 400px 200px; */
+             grid-template-columns: repeat(4, 1fr);
+             grid-template-rows: 100px 200px 300px 200px;
+             column-gap: 20px;
+             row-gap: 40px;
+        }
+
+        .grid-items{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .grid-items:nth-child(14){
+            grid-column: 4/5;
+        }
+        .grid-items:nth-child(2){
+            grid-column: 3/4;
+        }
+        .grid-items:nth-child(3){
+            grid-column: 2/3;
+            grid-row: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items">ITEM 1</div>
+        <div class="grid-items">ITEM 2</div>
+        <div class="grid-items">ITEMrtgyuijko 3</div>
+        <div class="grid-items">ITEM 4</div>
+        <div class="grid-items">ITEM 2</div>
+        <div class="grid-items">ITEM 3</div>
+        <div class="grid-items">ITEM 4</div>
+        <div class="grid-items">ITEM 1</div>
+        <div class="grid-items">ITEM 2</div>
+        <div class="grid-items">ITEM 3</div>
+        <div class="grid-items">ITEM 4</div>
+        <div class="grid-items">ITEM 2</div>
+        <div class="grid-items">ITEM 3</div>
+        <div class="grid-items">ITEM 4</div>
+    </div>
+</body>
+</html>

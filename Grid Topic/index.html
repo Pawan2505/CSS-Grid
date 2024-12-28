@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+            /* grid-template-columns: repeat(4,1fr); */
+            /* grid-template-columns: 1fr 1fr 1fr;
+             */
+
+             /* grid-template-columns: 300px 400px 500px; */
+             /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-rows: 100px 100px 100px; */
+
+            grid-template-areas: 
+            'box2 box1 box1 box1'
+            'box2 box3 box4 box4'
+            'box2 box3 box4 box4' 
+            ;
+         
+            padding: 50px;
+            gap: 20px;
+            text-align: center;
+            /* gap: 20px; */
+        }
+
+        /* .grid-items:nth-child(4){
+            grid-row: 1/3;
+        }
+        .grid-items:nth-child(3){
+            grid-column: 2;
+            grid-row: 2/4;
+        } */
+
+        .box1{
+            grid-area: box1;
+            background-color: red;
+          padding: 100px;
+        }
+
+        .box2{
+            grid-area: box2;
+            background-color: green;
+            padding: 100px;
+        }
+
+        .box3{
+            grid-area: box3;
+            background-color: pink;
+            padding: 100px;
+        }
+
+        .box4{
+            grid-area: box4;
+
+            background-color: blueviolet;
+            padding: 100px;
+        }
+/* 
+        .box5{
+            grid-area: 'box5';
+            background-color: rgb(43, 226, 101);
+        }
+
+        .box6{
+            grid-area: 'box6';
+            background-color: rgb(226, 153, 43);
+        }
+
+        .box7{
+            grid-area: 'box7';
+            background-color: rgb(226, 43, 43);
+        } */
+    </style>
+</head>
+<body>
+    
+    <div class="grid-container">
+        <div class="grid-items box1">Item 1</div>
+        <div class="grid-items box2">Item 2</div>
+        <div class="grid-items box3">Item 3</div>
+        <div class="grid-items box4">Item 4</div>
+        <!-- <div class="grid-items box5">Item 5</div>
+        <div class="grid-items box6">Item 6</div>
+        <div class="grid-items box7">Item 7</div> -->
+    </div>
+
+</body>
+</html>

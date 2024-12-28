@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+   <style>
+     .grid-container{
+        padding: 100px;
+        display: grid;
+        row-gap: 50px;
+        column-gap: 30px;
+        grid-template-areas: 
+        'lefts lefts lefts lefts'
+        'header rights rights rights'
+        'header  footer footer footer'
+        
+        ;   
+    }
+
+    .grid-items1{
+        background-color: lightblue;
+        padding: 20px;
+        grid-area: header;
+
+    }
+    .grid-items2{
+        background-color: lightcoral;
+        padding: 20px;
+        grid-area: lefts;
+
+    }
+    .grid-items3{
+        background-color: rgb(185, 30, 121);
+        padding: 20px;
+        grid-area: rights;
+
+    }
+    .grid-items4{
+        background-color: blue;
+        padding: 20px;
+        grid-area: footer;
+
+    }
+   </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-items1">Header</div>
+        <div class="grid-items2">left</div>
+        <div class="grid-items3">right</div>
+        <div class="grid-items4">footer</div>
+    </div>
+</body>
+</html>

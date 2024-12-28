@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Property</title>
+
+    <style>
+        .grid-container {
+            display: grid;
+            height: 800px;
+            border: 2px solid green;
+
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            /* grid-template-rows: 50px 50px 50px; */
+            column-gap: 10px;
+            row-gap: 20px;
+
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content: center; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+
+            /* align-content: center; */
+            /* align-content: flex-end; */
+            align-content: flex-start;
+
+        }
+
+        .grid-items {
+            border: 2px solid black;
+            padding: 10px;
+            /* align-items: flex-start; */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+        <div class="grid-item-1 grid-items">Item-1</div>
+        <div class="grid-item-2 grid-items">Item-2</div>
+    </div>
+</body>
+
+</html>

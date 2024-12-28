@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction Of Grid</title>
+    <style>
+
+        .container{
+            display: grid;
+
+            /* grid-template-columns: 200px 300px 200px 200px; */
+            /* grid-template-columns: repeat(4, 5fr); */
+
+            grid-template-columns: 1fr 2fr 1fr 2fr;
+
+            grid-template-rows: 50px;
+
+            gap: 20px;
+        }
+
+        .box{
+           
+            border: 3px solid lightsalmon;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        #box1{
+            background-color: lightgoldenrodyellow;
+        }
+        #box2{
+            background-color: lightslategray;
+        }
+        #box3{
+            background-color: lightyellow;
+        }
+        #box4{
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 4</div>
+    </div>
+</body>
+</html>
