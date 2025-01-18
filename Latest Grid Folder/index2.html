@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'about image  image image'
+                'about image  image image'
+                'about footer  footer footer'
+            ;
+
+            grid-template-rows:100px 100px 100px 100px ;
+        }
+
+        .item {
+            padding: 50px;
+            border: 1px solid black;
+        }
+
+        .grid-items-1 {
+            grid-area: navbar;
+            background-color: lightblue;
+        }
+
+        .grid-items-2 {
+            grid-area: about;
+            background-color: lightgoldenrodyellow;
+        }
+
+        .grid-items-3 {
+            grid-area: image;
+            background-color: lightseagreen;
+        }
+
+        .grid-items-4 {
+            grid-area: footer;
+            background-color: rgb(246, 246, 21);
+        }
+
+        @media (max-width: 1200px){
+            .grid-container {
+           
+            grid-template-areas:
+                'navbar navbar navbar'
+                'about about footer'
+                'image image footer'
+                'image image footer'
+            ;
+        }
+        }
+        @media (max-width: 500px){
+            .grid-container {
+           
+            grid-template-areas:
+                'navbar'
+                'about'
+                'image'
+                'footer'
+            ;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items-1 item">Navbar</div>
+        <div class="grid-items-2 item">About</div>
+        <div class="grid-items-3 item">Image</div>
+        <div class="grid-items-4 item">Footer</div>
+    </div>
+</body>
+
+</html>

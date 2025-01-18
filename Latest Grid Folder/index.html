@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* grid-template-columns: repeat(4,1fr); */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: 100px 200px 300px 400px; */
+            /* grid-template-rows: 200px 400px 300px 100px; */
+            /* row-gap: 20px;
+            column-gap: 40px; */
+            gap: 20px;
+            /* text-align: center; */
+            /* justify-content: center; */
+            /* align-items: center; */
+        }
+
+        .grid-items {
+            padding: 40px;
+            border: 1px solid black;
+        }
+
+        /* .grid-items:nth-child(1){ */
+        /* grid-row: 1/6; */
+        /* grid-row-start: 1; */
+        /* grid-row-end: 6; */
+
+        /* } */
+
+        .grid-item-1 {
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 7;
+            /* flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+
+
+        }
+
+        .main {
+            align-self: center;
+            /* justify-self: center; */
+        }
+
+        .grid-item-5 {
+            grid-row-start: 2;
+            grid-row-end: 5;
+            grid-column-start: 3;
+        }
+        .grid-item-8 {
+          grid-row-start: 1;
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+
+        .grid-items:nth-child(10) {
+            /* grid-column: 2/4; */
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-items grid-item-1">
+            <div class="main">
+                <h1>Beautiful Picture</h1>
+
+                <div>
+                    <img src="https://picsum.photos/id/23/100/100" alt="">
+                </div>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste modi rerum voluptatibus molestiae
+                    animi corporis non, accusantium voluptatum accusamus.</p>
+            </div>
+
+        </div>
+        <div class="grid-items grid-item-2">Iem-2</div>
+        <div class="grid-items grid-item-3">Iem-3</div>
+        <div class="grid-items grid-item-4">Iem-4</div>
+        <div class="grid-items grid-item-5">Iem-5</div>
+        <div class="grid-items grid-item-6">Iem-1</div>
+        <div class="grid-items grid-item-7">Iem-2</div>
+        <div class="grid-items grid-item-8">Iem-33</div>
+        <div class="grid-items grid-item-9">Iem-4</div>
+        <div class="grid-items grid-item-10">Iem-5</div>
+
+    </div>
+</body>
+
+</html>
